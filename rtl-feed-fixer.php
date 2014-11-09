@@ -91,7 +91,7 @@ class RtlFeedFixer {
             foreach($x->query("//p") as $node)
             {
                 $node->setAttribute("dir","rtl");
-                $node->setAttribute("style","direction: rtl; text-align: left;");
+                $node->setAttribute("style","direction: rtl; text-align: right;");
             }
             $content = $dom->saveHtml();
         } else {
